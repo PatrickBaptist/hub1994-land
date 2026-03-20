@@ -225,6 +225,7 @@
   /* ===== PROJETOS ===== */
   #projetos {
     background: var(--black);
+    padding-bottom: 50px;
   }
 
   .projetos-header {
@@ -645,6 +646,7 @@
     color: rgba(240,237,230,0.6);
     text-decoration: none;
     transition: color 0.2s;
+    cursor: pointer;
   }
 
   .footer-col ul li a:hover { color: var(--orange); }
