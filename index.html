@@ -80,7 +80,7 @@
     <h2>PROJETOS DO HUB</h2>
   </div>
   <div class="projetos-grid">
-    <div class="projeto-card reveal" style="transition-delay:0.1s" onclick="openModal('summit1994')">
+    <div class="projeto-card reveal" onclick="openModal('summit1994')">
       <div class="projeto-img">
         <span class="projeto-num">01</span>
       </div>
@@ -100,7 +100,7 @@
         <span style="display:inline-block;margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--orange);">Ver mais ↗</span>
       </div>
     </div>
-    <div class="projeto-card reveal" style="transition-delay:0.2s">
+    <div class="projeto-card reveal" style="transition-delay:0.2s" style="transition-delay:0.1s" onclick="openModal('premio1994')">
       <div class="projeto-img">
         <span class="projeto-num">03</span>
       </div>
@@ -370,6 +370,56 @@
   </div>
 </div>
 
+<!-- MODAL PRÊMIO 1994 -->
+<div class="modal" id="modal-premio1994">
+  <div class="modal-close">
+    <span class="modal-close-label">PRÊMIO 1994</span>
+    <button class="modal-close-btn" onclick="closeModal()">✕</button>
+  </div>
+
+  <div class="modal-hero">
+    <div class="modal-hero-bg">1994</div>
+    <h2>PRÊMIO 1994</h2>
+  </div>
+
+  <div class="modal-marquee">
+    <div class="marquee-track" style="animation-duration:18s;">
+      <span class="marquee-item">ANCESTRALIDADE <span class="sep">/</span></span>
+      <span class="marquee-item">PROTAGONISMO <span class="sep">/</span></span>
+      <span class="marquee-item">EXCELÊNCIA <span class="sep">/</span></span>
+      <span class="marquee-item">LEGADO <span class="sep">/</span></span>
+      <span class="marquee-item">INOVAÇÃO <span class="sep">/</span></span>
+      <span class="marquee-item">INTELECTUALIDADE <span class="sep">/</span></span>
+      <span class="marquee-item">RESISTÊNCIA <span class="sep">/</span></span>
+      <span class="marquee-item">PERTENCIMENTO <span class="sep">/</span></span>
+      <span class="marquee-item">ANCESTRALIDADE <span class="sep">/</span></span>
+      <span class="marquee-item">PROTAGONISMO <span class="sep">/</span></span>
+      <span class="marquee-item">EXCELÊNCIA <span class="sep">/</span></span>
+      <span class="marquee-item">LEGADO <span class="sep">/</span></span>
+      <span class="marquee-item">INOVAÇÃO <span class="sep">/</span></span>
+      <span class="marquee-item">INTELECTUALIDADE <span class="sep">/</span></span>
+      <span class="marquee-item">RESISTÊNCIA <span class="sep">/</span></span>
+      <span class="marquee-item">PERTENCIMENTO <span class="sep">/</span></span>
+    </div>
+  </div>
+
+  <div class="modal-manifesto">
+    <span class="modal-tag">Manifesto</span>
+    <h3>ONDE A CULTURA PRETA E URBANA É LUXO E INTELECTUAL</h3>
+    <p>O Premio 1994 reconhece e valoriza a cultura urbana afro-brasileira como expressao artistica, intelectual e social.</p>
+    <p>No Premio 1994, cada batida, cada verso e cada performance é um manifesto de pertencimento. É a celebracao da resistencia dos sonhos que nasceram nos bailes, chegaram nas ruas e dominaram o mundo.</p>
+    <p>Valorizamos a excelencia, a inovacao e a profundidade das obras e de quem as cria, promovendo diversidade e protagonismo. Honramos a memoria, os saberes e a essencia da cultura urbana, reconhecendo o passado como forca que orienta o presente e desenha o futuro.</p>
+    <p style="margin-top:2rem; font-family:'Barlow Condensed',sans-serif; font-size:clamp(1.2rem,2.5vw,1.8rem); font-weight:900; text-transform:uppercase; line-height:1.1; color:var(--orange);">AQUI, A ARTE URBANA É PATRIMONIO INTELECTUAL, RESISTENCIA E ANCESTRAL. É O ENCONTRO DAS RAIZES, DO PERTENCIMENTO E DA ESSENCIA POR MEIO DA ARTE.</p>
+  </div>
+
+  <div class="modal-cta">
+    <p>FACA PARTE<br><span>DESSE MOVIMENTO</span></p>
+    <a href="https://wa.me/5521985472151" target="_blank" rel="noopener noreferrer" class="btn-cta">
+      Feche com a Rua! <span class="arrow">↗</span>
+    </a>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-bg">1994</div>
@@ -378,7 +428,7 @@
       <a href="#" class="footer-brand-logo">1994</a>
       <p>Hub que resgata a essencia da cultura preta e urbana a partir da conexão entre a rua, a musica, o empreendedorismo e a intelectualidade.</p>
       <div class="footer-social">
-        <a href="#" class="social-btn" title="Instagram">
+        <a href="https://www.instagram.com/somoshub1994?igsh=cXRqazZieHViazZv" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" fill="none"/>
             <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -410,8 +460,8 @@
       <ul>
         <li><a href="#projetos">Jantar de Gala</a></li>
         <li><a onclick="openModal('lab1994')">LAB 1994</a></li>
-        <li><a href="#projetos">1994 Summit</a></li>
-        <li><a href="#projetos">Premio 1994</a></li>
+        <li><a onClick="openModal('summit1994')">1994 Summit</a></li>
+        <li><a onclick="openModal('premio1994')">Premio 1994</a></li>
       </ul>
     </div>
     <div class="footer-col">
