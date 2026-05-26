@@ -350,6 +350,40 @@
     margin-bottom: 0.4rem;
   }
 
+  /* ECO FORM */
+  .eco-form { margin-top: 2rem; width: 100%; max-width: 680px; }
+  .eco-form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.5rem; }
+  .eco-full { grid-column: 1 / -1; }
+  .eco-form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .eco-form-group label,
+  .eco-check-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+  }
+  .eco-check-title { display: block; margin-bottom: 0.75rem; }
+  .eco-form-group input {
+    background: rgba(255,255,255,0.04);
+    border: 0.5px solid rgba(255,255,255,0.15);
+    border-radius: 4px; color: #fff;
+    padding: 0.65rem 0.9rem;
+    font-family: 'Barlow', sans-serif; font-size: 0.95rem;
+    width: 100%; box-sizing: border-box;
+    transition: border-color 0.2s; outline: none;
+  }
+  .eco-form-group input::placeholder { color: rgba(255,255,255,0.2); }
+  .eco-form-group input:focus { border-color: var(--orange); }
+  .eco-checkboxes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .eco-check { display: flex; align-items: center; gap: 0.6rem; cursor: pointer; }
+  .eco-check input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--orange); cursor: pointer; }
+  .eco-check span { font-size: 0.9rem; color: rgba(255,255,255,0.75); }
+
+  @media (max-width: 600px) {
+    .eco-form-grid { grid-template-columns: 1fr; }
+    .eco-checkboxes { grid-template-columns: 1fr; }
+  }
+
   .btn-cta {
     display: inline-flex;
     align-items: center;
@@ -360,6 +394,7 @@
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    background: rgba(255,255,255,0.04);
     color: var(--white);
     border: 1px solid rgba(240,237,230,0.4);
     padding: 0.85rem 1.8rem;

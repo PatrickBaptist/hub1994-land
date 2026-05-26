@@ -4,8 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hub 1994</title>
-<link link rel="shortcut icon" type="image/jpg" href="./assets/hub1994.jpg" />
+<link rel="shortcut icon" type="image/jpg" href="./assets/hub1994.jpg" />
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<meta name="theme-color" content="#000" />
+<meta name="description" content="Criamos experiências que transformam marcas em cultura.">
+
+<meta property="og:title" content="HUB 1994 | Cultura, Intelectualidade e Capital">
+<meta property="og:description" content="Criamos experiências que transformam marcas em cultura.">
+<meta property="og:image" content="https://hub1994.com.br/assets/hub1994.jpg">
+<meta property="og:url" content="https://hub1994.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HUB 1994">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HUB 1994 | Cultura, Intelectualidade e Capital">
+<meta name="twitter:description" content="Criamos experiências que transformam marcas em cultura.">
+<meta name="twitter:image" content="https://hub1994.com.br/assets/hub1994.jpg">
+<meta name="twitter:url" content="https://hub1994.com.br">
+<meta name="twitter:site" content="@hub1994">
+<meta name="twitter:creator" content="@hub1994">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -152,9 +171,50 @@
     <h2>FAÇA PARTE<br>DO <span class="orange">ECOSSISTEMA</span></h2>
     <p>Conecte-se com a cultura, a ancestralidade e o capital.</p>
     <p>Entre em contato e faça parte do movimento.</p>
-    <a href="https://wa.me/5521985472151" target="_blank" rel="noopener noreferrer" class="btn-cta">
-      Feche com a Rua! <span class="arrow">↗</span>
-    </a>
+
+    <form class="eco-form" action="https://formspree.io/f/xeedpkoa" method="POST">
+      <div class="eco-form-grid">
+        <div class="eco-form-group eco-full">
+          <label>Nome completo</label>
+          <input type="text" name="nome" placeholder="Seu nome completo" required />
+        </div>
+        <div class="eco-form-group">
+          <label>Qual o seu melhor email?</label>
+          <input type="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="eco-form-group">
+          <label>Telefone</label>
+          <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" />
+        </div>
+        <div class="eco-form-group">
+          <label>Qual é o seu cargo?</label>
+          <input type="text" name="cargo" placeholder="Ex: Diretor, Gerente..." />
+        </div>
+        <div class="eco-form-group">
+          <label>Qual a sua área de atuação?</label>
+          <input type="text" name="area" placeholder="Ex: Cultura, Tecnologia..." />
+        </div>
+        <div class="eco-form-group">
+          <label>Empresa</label>
+          <input type="text" name="empresa" placeholder="Nome da empresa" />
+        </div>
+        <div class="eco-form-group eco-full">
+          <label>Cidade / Estado</label>
+          <input type="text" name="cidade" placeholder="Ex: Rio de Janeiro / RJ" />
+        </div>
+        <div class="eco-form-group eco-full">
+          <label class="eco-check-title">Qual projeto você tem interesse?</label>
+          <div class="eco-checkboxes">
+            <label class="eco-check"><input type="checkbox" name="projeto" value="esquenta" /><span>Esquenta 1994</span></label>
+            <label class="eco-check"><input type="checkbox" name="projeto" value="summit" /><span>Summit (Conferência)</span></label>
+            <label class="eco-check"><input type="checkbox" name="projeto" value="premiacao" /><span>Premiação</span></label>
+            <label class="eco-check"><input type="checkbox" name="projeto" value="outro" /><span>Outro</span></label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn-cta">Feche com a Rua! <span class="arrow">↗</span></button>
+    </form>
+    <input type="hidden" name="_next" value="https://hub1994.com.br" />
   </div>
 </section>
 
